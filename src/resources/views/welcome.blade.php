@@ -64,6 +64,14 @@
         </style>
     </head>
     <body>
+        <div style="padding-top: 30px;">
+            <a href="/kiev" style="text-decoration: none; margin-left: 30px;">Посмотреть погоду в Киеве</a>
+            <form action="/cityWeather" method="post" style="margin: 30px 0 0 30px">
+                <label for="city">какой город?</label><br>
+                <input type="text" name="city">
+                <input type="submit" value="че там">
+            </form>
+        </div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
